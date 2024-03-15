@@ -6,13 +6,14 @@ const reprovedImg = '<i class="fa-solid fa-xmark"></i>';
 const inputActivity = document.getElementById("activity-input");
 const inputGrade = document.getElementById("grade-input");
 
-const minGrade = prompt("Insert minimum grade: ");
+const minGrade = parseInt(prompt("Insert minimum grade: "));
 let lines = "";
 const gradeArray = [];
 const activityArray = [];
 
 form.addEventListener("submit", function(e){
     e.preventDefault();
+
 
     insertTable();
     tableUpdate();
@@ -24,6 +25,7 @@ form.addEventListener("submit", function(e){
 })
 
 function insertTable() {
+
     if(activityArray.includes(inputActivity.value)){
         alert(`${inputActivity.value} has already been entered.`);
     }
