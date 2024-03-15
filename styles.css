@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    background-color: rgb(115, 115, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 15px;
+}
+
+h1 i {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    /* background-color: aqua; */
+    margin: 0 auto;
+
+}
+
+form {
+    margin-bottom: 10px;
+}
+
+input,
+button {
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(56, 56, 197);
+}
+#activity-input {
+    width: 55%;
+}
+
+#grade-input {
+    width: 25%;
+}
+
+table {
+    font-size: 16px;
+    text-align: center;
+    width: 500px;
+    max-width: 100%;;
+}
+
+table thead {
+    color: rgb(115, 115, 255);
+    font-size: 20px;
+}
+
+thead th {
+    border-bottom: 2px solid rgb(80, 77, 107);
+    padding: 8px 12px;
+}
+
+table td {
+    border-bottom: 1px solid rgb(201, 201, 201);
+    padding: 10px;
+}
+
+button {
+    background-color: rgb(115, 115, 255);
+    color: white;
+}
+
+.finalGrade {
+    background-color:rgb(159, 159, 255);
+    color: white;
+}

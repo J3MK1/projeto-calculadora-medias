@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator - Project 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>
+        <i class="fa-solid fa-graduation-cap" alt="academic cap" ></i>
+        Grade Calculator
+    </h1>
+    <div class="container">
+    <form id="form" action="">
+        <input type="text" id="activity-input" required placeholder="Activity's Name">
+        <input type="number" id="grade-input" required min="0" max="10" placeholder="Grade">
+        <button>Add +</button>
+    </form>
+    <table cellspacing = "0">
+        <thead>
+            <th>Activity's Name</th>
+            <th>Grade</th>
+            <th>Result</th>
+        </thead>
+        <tbody id="table-body">
+            <tr>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+            </tr>
+        </tbody>
+        <tfoot id="table-foot">
+            <tr class="finalGrade">            
+                <td><b>Final GPA</td>
+                <td><span id="final-grade"> --- </span></td>
+                <td><span id="final-grade-img">---</i></span></td>
+            </tr>
+        </tfoot>
+    </table>
+    </div>
+    <script src="https://kit.fontawesome.com/aeaf109180.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
