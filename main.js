@@ -14,7 +14,6 @@ const activityArray = [];
 form.addEventListener("submit", function(e){
     e.preventDefault();
 
-
     insertTable();
     tableUpdate();
     calcFinalGrade();
@@ -25,7 +24,6 @@ form.addEventListener("submit", function(e){
 })
 
 function insertTable() {
-
     if(activityArray.includes(inputActivity.value)){
         alert(`${inputActivity.value} has already been entered.`);
     }
