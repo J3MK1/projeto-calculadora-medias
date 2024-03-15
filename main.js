@@ -49,7 +49,7 @@ function tableUpdate(){
 function gradeUpdate() {
     const finalGrade = calcFinalGrade();
 
-    const finalGradeLine = document.getElementById("final-grade").innerHTML = finalGrade;
+    const finalGradeLine = document.getElementById("final-grade").innerHTML = finalGrade.toFixed(2);
     const finalGradeImg = document.getElementById("final-grade-img").innerHTML = finalGrade >= minGrade ?  approvedImg : reprovedImg;
 }
 
